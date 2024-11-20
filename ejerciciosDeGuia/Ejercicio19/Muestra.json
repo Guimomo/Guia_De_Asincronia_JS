@@ -1,0 +1,34 @@
+{
+   "data" :
+   [{
+
+    "nombre":"Guillermo",
+    "apellido":"Garrido",
+    "Cargo":"Delineante"
+
+   },{
+
+    "nombre":"Kevin",
+    "apellido":"Polo",
+    "Cargo":"Sistemas"
+
+   },{
+
+      "nombre":"Maria",
+      "apellido":"Luna",
+      "Cargo":"Diseñadora"
+  
+   },{
+
+      "nombre":"Andrea",
+      "apellido":"Jaime",
+      "Cargo":"Supervisor"
+  
+   },{
+
+      "nombre":"Jose",
+      "apellido":"Paez",
+      "Cargo":"Sistemas"
+  
+   }]
+}

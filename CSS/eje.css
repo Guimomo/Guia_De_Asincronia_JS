@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #4a90e2;
+}
+
+/* Separador */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Párrafos */
+p {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
