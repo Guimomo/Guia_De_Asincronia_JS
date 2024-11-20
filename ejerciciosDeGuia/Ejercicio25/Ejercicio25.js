@@ -42,7 +42,7 @@ const medio = {
 
         if (!propiedadesValidas.includes(propiedad)) {
             
-            throw new Error(`ERROR: La propiedad '${valor}' no existe en el objeto.`);
+            throw new Error(`ERROR: La propiedad '${propiedad}' no existe en el objeto.`);
         }
 
         if (propiedad == "userName" && !/^[A-Za-z\s]+$/.test(valor)) {
@@ -55,18 +55,18 @@ const medio = {
             
         }
 
-        const mailRegex = !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        const mailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
         if (propiedad == "email" && !mailRegex.test(valor)) {
             throw new Error("ERROR: Ingrese un email valido");
             
         }
 
-        const dateRegex = /^(0[1-9]|[12][0-9]|3[01])[-\/](0[1-9]|1[0-2])[-\/](\d{4})$/;
+        const dateRegex = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
 
         if (propiedad == "date" && !dateRegex.test(valor)) {
 
-            throw new Error("ERROR: Ingrese una fecha valida");
+            throw new Error("ERROR: Ingrese una fecha valida por ejemplo YYYY-MM-DD");
             
         }
 
@@ -154,7 +154,7 @@ function creadorCuenta() {
 
             case 5:
 
-                let bornDate= prompt("Ingrese su fecha de nacimiento");
+                let bornDate= prompt("Ingrese su fecha de nacimiento en el formato YYYY-MM-DD (Ejemplo: 2024-11-20)");
 
                 try {
 
